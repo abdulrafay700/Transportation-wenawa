@@ -7,7 +7,8 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'bootstrap/dist/css/bootstrap.min.css',
-        'react-icons/rx'
+        'react-icons/rx',
+        'react-icons/gi' // Explicitly add react-icons/gi
       ],
     },
   },
