@@ -8,7 +8,8 @@ export default defineConfig({
       external: [
         'bootstrap/dist/css/bootstrap.min.css',
         'react-icons/rx',
-        'react-icons/gi' // Explicitly add react-icons/gi
+        'react-icons/gi',
+        'react-slick' // Explicitly add react-slick
       ],
     },
   },
