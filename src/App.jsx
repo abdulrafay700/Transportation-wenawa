@@ -1,4 +1,4 @@
-import Header from "../src/components/header.jsx"
+// import Header from "../src/components/header.jsx"
 import Carousels from "./components/Carousels.jsx"
 import WelcomeSection from "./components/WelcomeBoySection.jsx"
 import VideoSection from "./components/VideoSection.jsx"
@@ -11,7 +11,7 @@ function App(){
     return(
         <>
             <div className="page-wrapper">
-                     <Header/>
+                     {/* <Header/> */}
                     <Carousels/>
                      <WelcomeSection/>
                      <VideoSection/>
