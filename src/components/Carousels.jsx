@@ -19,9 +19,9 @@ const Carousels = () => {
                 </div>
         <Carousel.Caption>
           <h2>FAST CARGO <span>SERVICES</span></h2>
-          <div className="d-flex">
+          <div className="row mt-5">
           <p>Global turnkey logistics and transportation services via sea, land and air. We will protect you from risk.</p>
-          <a className='site-btn' href="#">Read More</a>
+          <a className='site-btn ms-3' href="#">Read More</a>
           </div>
         </Carousel.Caption>
       </Carousel.Item>
@@ -33,7 +33,7 @@ const Carousels = () => {
                 </div>
         <Carousel.Caption>
             <h2>WORLD CLASS <span>LOGESTIC</span></h2>
-          <div className="d-flex">
+          <div className="row mt-5">
             <p>Global turnkey logistics and transportation services via sea, land and air. We will protect you from risk.</p>
             <a className='site-btn' href="#">Read More</a>
           </div>
@@ -49,7 +49,7 @@ const Carousels = () => {
   
         <Carousel.Caption>
             <h2>Fast Delivery <span>Service</span></h2>
-          <div className="d-flex">
+          <div className="row mt-sm-1">
             <p>Global turnkey logistics and transportation services via sea, land and air. We will protect you from risk.</p>
             <a className='site-btn' href="#">Read More</a>
           </div>

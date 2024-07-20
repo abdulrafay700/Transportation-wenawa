@@ -3,6 +3,8 @@ import Carousels from "./components/Carousels.jsx"
 import WelcomeSection from "./components/WelcomeBoySection.jsx"
 import VideoSection from "./components/VideoSection.jsx"
 import ServiceSection from "./components/ServiceSection.jsx"
+import TeamCardSection from "./components/TeamCard.jsx"
+import BlogCardSection from "./components/BlogSectionCard.jsx"
 
 
 
@@ -16,6 +18,8 @@ function App(){
                      <WelcomeSection/>
                      <VideoSection/>
                      <ServiceSection/>
+                     <TeamCardSection/>
+                     <BlogCardSection/>
          
 
                             

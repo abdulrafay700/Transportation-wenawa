@@ -15,7 +15,7 @@ function VideoSection() {
               </a>
             </div>
           </div>
-          <div className="col-md-12 col-lg-7 mt-md-5 mt-lg-0">
+          <div className="col-md-12 col-lg-7 mt-5 mt-lg-0">
             <div className="shipment-wrap ">
               <h2 className="mb-3">We give you complete control of your shipment and help you.</h2>
               <p className='mb-3'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, no when an unknown printer took a galley of type and scrambled.</p>

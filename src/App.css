@@ -167,11 +167,15 @@ header ul li a {
 /* Carousel Section */
 .carousel-section {
   width: 100%;
+  max-height: 80vh;
+  height: 90vh;
+  background: red;
   position: relative; /* Ensure proper positioning of pseudo-elements */
 }
 
 .carousel-img {
-  height: 100%;
+  max-height: 80vh;
+  height: 90vh;
   width: 100%;
   position: relative; /* Ensure proper positioning of pseudo-elements */
   overflow: hidden; /* Hide overflow to ensure the zoom effect stays within bounds */
@@ -263,7 +267,8 @@ header ul li a {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   color: var(--main-color);
-  font-size: 4rem;
+  font-size: clamp(23px, 5vw, 90px);
+  margin-bottom: 35px;
 }
 .carousel-caption h2 span{
   color: var(--white-color);
@@ -277,7 +282,7 @@ header ul li a {
   font-size: 15px;
   white-space: normal;
   min-height: 60px;
-  min-width: 410px;
+  min-width: 330px;
   max-height: 60px;
   max-width: 410px;
 }
@@ -319,7 +324,7 @@ header ul li a {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.welcome-section h3{
+.section-heading h3{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 35px;
@@ -651,7 +656,7 @@ width: 100%;
 
 
 
-/* card designs start*/
+/* ================owlcard designs start=======================*/
 .slick-track {
   display: flex;
   gap: 15px;
@@ -691,50 +696,87 @@ width: 100%;
   border-radius: 25px;
   object-fit: cover;
 }
-
-
- 
-
 .slick-prev {
   left: 15px;
   z-index: 10;
   width: 50px;
   height: 50px;
-
-
 }
 .slick-next {
   right: 15px;
   z-index: 10;
   width: 50px;
   height: 50px;
- 
-
 }
+/* ================owlcard designs end =======================*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ============= Team card design start and blogs card ==================== */
 .card-body{
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #eeeeee;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
 }
+.cardData{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.card-body .card-img img{
+  width: 100%;
+}
+.card-body h4{
+  font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1a1a1a;
+}
+
+.blog-heading h3::before{
+  position: absolute;
+  content: "BLOG";
+  display: block;
+  color: rgba(210, 210, 210, 0.3);
+  font-weight: 900;
+  font-size: 90px;
+  text-transform: uppercase;
+  top: 0px;
+  left: 50%;
+  width: 100%;
+  z-index: 5;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.blog-heading h3::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 5px;
+  left: 50%;
+  background-color: var(--main-color);
+  bottom: 10;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -2rem;
+}
+
+
+
+
+
+
+
+
 
 .card-body .card-title{
   /* width: 80%; */
@@ -760,18 +802,9 @@ width: 100%;
 .cardContent{
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem;
+  padding: 1rem 3rem;
 }
-.cardContent p{
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 32px;
-  line-height: 1.8rem;
-  margin-bottom: 40px;
-  text-align: justify; /* For Edge */
-  -moz-text-align-last: center; /* For Firefox prior 58.0 */
-  text-align-last: center;
-}
+
 
 .cardContent a{
   text-align: center;
@@ -782,12 +815,17 @@ width: 100%;
   /*  */
 }
 
-.cardContent a::after{
-  content: url("https://www.workable.com/static/images/ui/arrow-green-sm.svg");
-    vertical-align: -6%;
-    width: 15px;
-    margin-left: 10px;
-}
+
 
 /* card design end */
 
+
+/* =================media query=========================== */
+
+@media only screen and (max-width: 576px){
+  
+.welcome-section h3::before ,.blog-heading h3::before {
+  display: none !important;
+}
+
+}
