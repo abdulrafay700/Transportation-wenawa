@@ -6,10 +6,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        'bootstrap/dist/css/bootstrap.min.css',
         'react-icons/rx',
         'react-icons/gi',
-        'react-slick' // Explicitly add react-slick
+        'react-slick'
       ],
     },
   },
