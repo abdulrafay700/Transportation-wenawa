@@ -12,9 +12,7 @@ function App(){
         <>
             <div className="page-wrapper">
                      <Header/>
-                     <div className="container-fluid carousel-section mx-0 p-0">
-                        <Carousels/>
-                     </div>
+                    <Carousels/>
                      <WelcomeSection/>
                      <VideoSection/>
                      <ServiceSection/>

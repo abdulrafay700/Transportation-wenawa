@@ -9,6 +9,8 @@ const Carousels = () => {
 
 
   return (
+    <>
+    <div className='className="container-fluid carousel-section mx-0 p-0"'>
     <Carousel>
        {/* ==============================Card1======================================== */}
       <Carousel.Item>
@@ -55,6 +57,9 @@ const Carousels = () => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
+    </>
+   
   );
 };
 
