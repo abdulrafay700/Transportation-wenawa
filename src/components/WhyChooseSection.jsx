@@ -1,16 +1,22 @@
 import { useState } from "react";
+import img1 from "../../public/images/bg1.jpg"
+import img2 from "../../public/images/bg2.jpg"
+import img3 from "../../public/images/bg3.jpg"
+import img4 from "../../public/images/bg4.jpg"
+import img5 from "../../public/images/bg5.jpg"
+import img6 from "../../public/images/bg6.jpg"
 
 
 
 function ChooseUS() {
-        const [bgImage, setBgImage] = useState(("../../public/images/bg1.jpg"));
+        const [bgImage, setBgImage] = useState(img1);
       
         const handleMouseEnter = (image) => {
           setBgImage(image);
         };
       
         const handleMouseLeave = () => {
-          setBgImage(("../../src/images/bg1.jpg"));
+          setBgImage(img1);
         };
     return (
         <>
@@ -23,7 +29,7 @@ function ChooseUS() {
                     <div className="row mt-5 pt-5">
                         {/* card 1 */}
                         <div className="col-lg-4 col-md-6 mt-4"
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg1.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img1)}
                         onMouseLeave={handleMouseLeave}>
 
                             <div className="chose-box-wrapper">
@@ -33,7 +39,7 @@ function ChooseUS() {
                         </div>
                         {/* card 2 */}
                         <div className="col-lg-4 col-md-6 mt-4 "
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg2.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img2)}
                         onMouseLeave={handleMouseLeave}>
                             <div className="chose-box-wrapper">
                                 <h4>Management & Reporting</h4>
@@ -42,7 +48,7 @@ function ChooseUS() {
                         </div>
                         {/* card 3 */}
                         <div className="col-lg-4 col-md-6 mt-4"
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg3.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img3)}
                         onMouseLeave={handleMouseLeave}>
                             <div className="chose-box-wrapper">
                                 <h4>Freight Payment Options</h4>
@@ -51,7 +57,7 @@ function ChooseUS() {
                         </div>
                         {/* card 4 */}
                         <div className="col-lg-4 col-md-6 mt-4"
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg4.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img4)}
                         onMouseLeave={handleMouseLeave}>
                             <div className="chose-box-wrapper">
                                 <h4>Compliance Solutions</h4>
@@ -60,7 +66,7 @@ function ChooseUS() {
                         </div>
                         {/* card 5 */}
                         <div className="col-lg-4 col-md-6 mt-4"
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg5.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img5)}
                         onMouseLeave={handleMouseLeave}>
                             <div className="chose-box-wrapper">
                                 <h4>Timely Delivery</h4>
@@ -69,7 +75,7 @@ function ChooseUS() {
                         </div>
                         {/* card 6 */}
                         <div className="col-lg-4 col-md-6 mt-4"
-                        onMouseEnter={() => handleMouseEnter("../../public/images/bg6.jpg")}
+                        onMouseEnter={() => handleMouseEnter(img6)}
                         onMouseLeave={handleMouseLeave}>
                             <div className="chose-box-wrapper">
                                 <h4>24 / 7 Service</h4>
