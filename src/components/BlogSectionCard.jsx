@@ -38,7 +38,7 @@ function BlogSection(){
                         </div>
                     </div>
                     {/* card 2 */}
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-4 col-md-6  mt-4 mt-md-0">
                         <div className="card-body">
                             <div className="card-img">
                                 <img  src={Card2} alt="" srcset="" />
@@ -61,7 +61,7 @@ function BlogSection(){
                         </div>
                     </div>
                     {/* card3 */}
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-4 col-md-6  mt-4 mt-md-0">
                         <div className="card-body">
                             <div className="card-img">
                                 <img  src={Card3} alt="" srcset="" />

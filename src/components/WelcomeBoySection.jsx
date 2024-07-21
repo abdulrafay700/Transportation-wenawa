@@ -7,7 +7,7 @@ import DeliverBoy from "../../src/images/truck.png"
 
 function WelcomeSection(){
     return (
-        <section className="welcome-section pb-5 ">
+        <section className="welcome-section pb-5 py-5 ">
         <div className="container mt-5">
             <div className="section-heading ">
                 <h3>Transport Company</h3>

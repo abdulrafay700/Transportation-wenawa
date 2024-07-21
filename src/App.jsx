@@ -5,6 +5,7 @@ import VideoSection from "./components/VideoSection.jsx"
 import ServiceSection from "./components/ServiceSection.jsx"
 import TeamCardSection from "./components/TeamCard.jsx"
 import BlogCardSection from "./components/BlogSectionCard.jsx"
+import WhyChooseSection from "./components/WhyChooseSection.jsx"
 
 
 
@@ -20,6 +21,7 @@ function App(){
                      <ServiceSection/>
                      <TeamCardSection/>
                      <BlogCardSection/>
+                     <WhyChooseSection/>
          
 
                             
