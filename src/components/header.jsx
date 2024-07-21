@@ -98,7 +98,7 @@ function Header() {
         <div className='d-xl-none d-lg-block' >
                     {/* <img src={logo} alt="" /> */}
             </div>
-        <div className='container d-flex justify-content-between'>
+        <div className='container d-flex justify-content-xl-between justify-content-end'>
                    
                 {/* navbar */}
                 <nav className='col-7 d-flex align-items-center d-xl-flex d-none' >
@@ -124,7 +124,7 @@ function Header() {
 
                 {/* left side login buttons */}
 
-                <div className='align-items-center gap-3 d-xl-flex  d-none '>
+                <div className='align-items-center gap-3  '>
                     <a className='icon-header-2 me-2' href="#"><FaShoppingCart /></a>
                     <a className='icon-header-2' href="#"><FaSearch /></a>
                 
@@ -144,7 +144,8 @@ function Header() {
 
 
         
-                    
+
+        {/*===============mobile menu=============  */}
         <div className={`mobile-menu d-xl-none  ${isMenuOPen? "d-flex flex-column" : "d-none"}`}>
                 <div className="close-btn icon" onClick={toggleMenu}>
                     <FaXmark />
@@ -168,11 +169,7 @@ function Header() {
                         <a  href="#">ElEMENTES</a>
                     </li>
                 </ul>
-                <div className='align-items-center gap-3 mb-3 d-flex flex-column' >
-                    <h6>Login</h6>
-                    <button className='primary-btn'>Request a demo</button>
-                    <button className='secondary-btn'>Start a free trial</button>
-                </div>
+               
             </div>
             
         </>   
