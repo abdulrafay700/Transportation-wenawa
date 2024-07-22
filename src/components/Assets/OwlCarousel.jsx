@@ -47,7 +47,7 @@ function Responsive() {
     ]
   };
   return (
-    <div className="slider-container">
+    <div className="slider-container service-owl">
       <Slider {...settings}>
         <div className="owl-card">
             {/* card 1 */}

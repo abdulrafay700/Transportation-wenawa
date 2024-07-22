@@ -701,14 +701,17 @@ width: 100%;
   border-radius: 25px;
   object-fit: cover;
 }
-.slick-prev {
-  left: 15px;
-  z-index: 10;
+.service-owl .slick-prev {
+  left: 10px !important;
+  z-index: 3 !important;
   width: 50px;
   height: 50px;
 }
-.slick-next {
-  right: 15px;
+.service-owl .slick-track {
+  display: flex;
+}
+.service-owl .slick-next {
+  right: 10px !important;
   z-index: 10;
   width: 50px;
   height: 50px;
