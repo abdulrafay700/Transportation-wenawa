@@ -7,6 +7,7 @@ import TeamCardSection from "./components/TeamCard.jsx"
 import BlogCardSection from "./components/BlogSectionCard.jsx"
 import WhyChooseSection from "./components/WhyChooseSection.jsx"
 import TestimonialSection from "./components/TestimonialSection.jsx"
+import ContactSection from "./components/ContactSection.jsx"
 
 
 
@@ -24,6 +25,7 @@ function App(){
                      <BlogCardSection/>
                      <WhyChooseSection/>
                      <TestimonialSection/>
+                     <ContactSection/>
          
 
                             

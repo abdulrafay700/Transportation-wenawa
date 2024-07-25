@@ -316,6 +316,13 @@ header ul li a {
   text-transform: uppercase;
   font-weight: 600 !important;
   color: var(--white-color) !important;
+  -webkit-transition: all .8s ease;
+}
+
+.site-btn:active, .site-btn:hover, .site-btn:focus, .active>.site-btn {
+  background-color: #a60000;
+  color: #fff;
+  
 }
 /* ===============carouse setion end ===================== */
 
@@ -1068,6 +1075,75 @@ color: #fff;
   transform: translateX(-50%);
   bottom: -2rem;
 }
+
+/* ================= contact section start =========================== */
+.contact-form{
+  background-color: #020d26;
+  padding: 2rem;
+  position: relative;
+}
+.contact-form .rotateside-contact {
+  position: absolute;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  padding: 0  1rem;
+  color: var(--main-color);
+  right: -55px;
+  transform: rotate(270deg);
+  font-weight: 700;
+  font-size: 14px;
+  top: 25%;
+  letter-spacing: 2px;
+}
+.contact-form .form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(22, 28, 42);
+  color: #fff;
+  margin-bottom: 25px;
+  outline: none !important;
+
+}
+
+.contact-form input::placeholder,
+.contact-form h2 {
+  color: var(--white-color);
+}
+
+.contact-form .form-control:focus {
+  background-color: transparent;
+  color: var(--white-color);
+  outline:  0 !important;
+  border-bottom: 1px solid rgb(22, 28, 42);
+  box-shadow: none !important;;
+}
+.contact-section{
+  position: relative;
+}
+.contact-section .bg-image{
+
+  background-image: url("../src/images/bg-trans-2.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  
+ 
+}
+.right-contantact-img{
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+
+}
+
+@media only screen and (max-width: 767px) {
+  .right-contantact-img{
+    position: inherit;
+    width: 100%;
+   
+  }
+}
+
+
 /* =================media query=========================== */
 
 @media only screen and (max-width: 576px){
