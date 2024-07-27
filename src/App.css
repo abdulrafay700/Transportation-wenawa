@@ -322,7 +322,7 @@ header ul li a {
 .site-btn:active, .site-btn:hover, .site-btn:focus, .active>.site-btn {
   background-color: #a60000;
   color: #fff;
-  
+
 }
 /* ===============carouse setion end ===================== */
 
@@ -988,6 +988,7 @@ color: #fff;
 }
 .testimonial-pic img{
   width: 100%;
+  /* height: 100%; */
 }
 .shadow{
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
@@ -1050,7 +1051,7 @@ color: #fff;
   display: block;
   color: rgba(210, 210, 210, 0.3);
   font-weight: 900;
-  font-size: 90px;
+  font-size: 70px;
   text-transform: uppercase;
   top: 0px;
   left: 50%;
@@ -1120,21 +1121,36 @@ color: #fff;
 .contact-section{
   position: relative;
 }
-.contact-section .bg-image{
+.contact-section.bg-image{
 
   background-image: url("../src/images/bg-trans-2.png");
   background-position: right;
   background-repeat: no-repeat;
-  
- 
 }
 .right-contantact-img{
   position: absolute;
   bottom: 0;
   left: 40%;
-
+}
+.client-logo{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+    width: 95% !important;
+    border: 1px solid #f2f2f2;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
 }
 
+.client-carousel-logo button {
+  display: none !important;
+}
+
+.client-carousel-logo ul.slick-dots {
+  display: none !important;
+}
 @media only screen and (max-width: 767px) {
   .right-contantact-img{
     position: inherit;
