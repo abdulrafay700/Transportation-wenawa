@@ -26,7 +26,7 @@ function service(){
                     <div className="tyrePosition">
                         <img src={Tyre} alt="" />
                     </div>
-                        {/* light blinl */}
+                        {/* light blink */}
                     <div className="LightBlinker">
                         <img src={LightBlink} alt="" />
                     </div>

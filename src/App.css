@@ -551,12 +551,23 @@ h2{
 /* ===============Service section start ===================== */
 .service-section{
   background-image: url("images/bg-trans-1.png");
-  height: auto;
-  padding-bottom: 1rem ;
-  background-repeat:repeat-x;
-  background-size:auto 100%;
+  height: auto; /* Or set a specific height if needed */
+  padding-bottom: 1rem;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
   position: relative;
+  animation: roadMover 20s linear infinite;
 }
+
+@keyframes roadMover{
+  from{
+    background-position: 0 0; /* Start position */
+  }
+  to{
+    background-position: -5000px 0; /* End position */
+  }
+}
+
 
 .service-section.bg-secondary{
   background-color: #020d26 !important;
